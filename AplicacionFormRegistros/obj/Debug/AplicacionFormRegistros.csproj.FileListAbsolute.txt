@@ -1,0 +1,14 @@
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\bin\Debug\AplicacionFormRegistros.exe.config
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\bin\Debug\AplicacionFormRegistros.exe
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\bin\Debug\AplicacionFormRegistros.pdb
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.csproj.AssemblyReference.cache
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.Forms.ClientesForm.resources
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.Forms.LoginForm.resources
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.Forms.MainForm.resources
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.Forms.ProductosForm.resources
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.Properties.Resources.resources
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.csproj.GenerateResource.cache
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.csproj.CoreCompileInputs.cache
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.exe
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.pdb
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.exe.config

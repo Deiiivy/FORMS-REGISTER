@@ -1,0 +1,219 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\clientesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\clientesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\productosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\productosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\productosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\productosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\clientesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\clientesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\database\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\database\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|c:\\users\\deivy\\source\\repos\\aplicacionformregistros\\aplicacionformregistros\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8965308-D931-4E87-8E8E-5E0A929FCBBF}|AplicacionFormRegistros\\AplicacionFormRegistros.csproj|solutionrelative:aplicacionformregistros\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientesForm.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\ClientesForm.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\ClientesForm.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\ClientesForm.cs",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\ClientesForm.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:49:41.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductosForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\ProductosForm.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\ProductosForm.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\ProductosForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\ProductosForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:26:46.825Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductosForm.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\ProductosForm.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\ProductosForm.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\ProductosForm.cs",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\ProductosForm.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAIIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T23:01:06.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientesForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\ClientesForm.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\ClientesForm.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\ClientesForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\ClientesForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:26:26.276Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\MainForm.cs",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\MainForm.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAMwCEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:41:43.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\MainForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\MainForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:26:08.559Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\LoginForm.Designer.cs",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAApwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:35:03.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConexionBD.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Database\\ConexionBD.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Database\\ConexionBD.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Database\\ConexionBD.cs",
+              "RelativeToolTip": "AplicacionFormRegistros\\Database\\ConexionBD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:28:20.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\LoginForm.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:31:32.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Forms\\LoginForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AplicacionFormRegistros\\Forms\\LoginForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:25:56.169Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Program.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Program.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Program.cs",
+              "RelativeToolTip": "AplicacionFormRegistros\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T23:03:09.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Form1.cs",
+              "RelativeDocumentMoniker": "AplicacionFormRegistros\\Form1.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\AplicacionFormRegistros\\AplicacionFormRegistros\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AplicacionFormRegistros\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T21:26:27.517Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
