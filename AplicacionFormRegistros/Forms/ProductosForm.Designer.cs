@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtProductID = new System.Windows.Forms.TextBox();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.btnCargar = new System.Windows.Forms.Button();
@@ -40,17 +38,10 @@
             this.btnInsertar = new System.Windows.Forms.Button();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtProductID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Product id";
             // 
             // label2
             // 
@@ -69,13 +60,6 @@
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "price";
-            // 
-            // txtProductID
-            // 
-            this.txtProductID.Location = new System.Drawing.Point(278, 64);
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.Size = new System.Drawing.Size(100, 20);
-            this.txtProductID.TabIndex = 3;
             // 
             // txtProductName
             // 
@@ -149,6 +133,22 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "PRODUCTOS FORM";
             // 
+            // txtProductID
+            // 
+            this.txtProductID.Location = new System.Drawing.Point(278, 64);
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.Size = new System.Drawing.Size(100, 20);
+            this.txtProductID.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(129, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Product id";
+            // 
             // ProductosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,11 +175,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtProductID;
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Button btnCargar;
@@ -188,5 +185,7 @@
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtProductID;
+        private System.Windows.Forms.Label label1;
     }
 }

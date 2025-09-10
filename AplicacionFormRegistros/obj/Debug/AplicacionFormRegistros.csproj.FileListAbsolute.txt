@@ -12,3 +12,5 @@ C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\
 C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.exe
 C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.pdb
 C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.exe.config
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.Forms.SeguridadForm.resources
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.Forms.RegisterForm.resources

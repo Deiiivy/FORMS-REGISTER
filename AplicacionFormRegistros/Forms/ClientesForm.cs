@@ -18,10 +18,37 @@ namespace AplicacionFormRegistros.Forms
         public ClientesForm()
         {
             InitializeComponent();
+
+            dgvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvClientes.MultiSelect = false;
+            dgvClientes.ReadOnly = true;
+            dgvClientes.AllowUserToAddRows = false;
+
+            dgvClientes.SelectionChanged += dgvClientes_SelectionChanged;
         }
 
+        private bool ValidarCliente(bool incluirID = false)
+        {
+            if (incluirID && string.IsNullOrWhiteSpace(txtPersonID.Text))
+            {
+                MessageBox.Show("Debe seleccionar un cliente de la lista.");
+                return false;
+            }
 
+            if (string.IsNullOrWhiteSpace(txtLastName.Text))
+            {
+                MessageBox.Show("El apellido no puede estar vacío.");
+                return false;
+            }
 
+            if (string.IsNullOrWhiteSpace(txtFirstName.Text))
+            {
+                MessageBox.Show("El nombre no puede estar vacío.");
+                return false;
+            }
+
+            return true;
+        }
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
@@ -31,11 +58,15 @@ namespace AplicacionFormRegistros.Forms
                 try
                 {
                     connection.Open();
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    DataTable clientesTable = new DataTable();
+                    adapter.Fill(clientesTable);
+                    dgvClientes.DataSource = clientesTable;
+
+                    if (dgvClientes.Rows.Count > 0)
                     {
-                        DataTable clientesTable = new DataTable();
-                        adapter.Fill(clientesTable);
-                        dgvClientes.DataSource = clientesTable;
+                        dgvClientes.Rows[0].Selected = true;
+                        dgvClientes_SelectionChanged(null, null);
                     }
                 }
                 catch (Exception ex)
@@ -47,11 +78,12 @@ namespace AplicacionFormRegistros.Forms
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            int PersonID = Convert.ToInt32(txtPersonID.Text);
-            string LastName = txtLastName.Text;
-            string FirstName = txtFirstName.Text;
+            if (!ValidarCliente()) return;
 
-            string query = "INSERT INTO Persons(PersonID, LastName, FirstName) VALUES(@PersonID, @LastName, @FirstName)";
+            string lastName = txtLastName.Text.Trim();
+            string firstName = txtFirstName.Text.Trim();
+
+            string query = "INSERT INTO Persons(LastName, FirstName) VALUES(@LastName, @FirstName)";
 
             using (SqlConnection connection = ConexionBD.GetConnection())
             {
@@ -59,14 +91,14 @@ namespace AplicacionFormRegistros.Forms
                 {
                     connection.Open();
                     SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@PersonID", PersonID);
-                    cmd.Parameters.AddWithValue("@LastName", LastName);
-                    cmd.Parameters.AddWithValue("@FirstName", FirstName);
+                    cmd.Parameters.AddWithValue("@LastName", lastName);
+                    cmd.Parameters.AddWithValue("@FirstName", firstName);
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Cliente insertado correctamente");
+                    MessageBox.Show("Cliente insertado correctamente.");
 
                     btnCargar_Click(null, null);
+                    LimpiarCampos();
                 }
                 catch (SqlException ex)
                 {
@@ -75,11 +107,14 @@ namespace AplicacionFormRegistros.Forms
             }
         }
 
+
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            int PersonID = Convert.ToInt32(txtPersonID.Text);
-            string LastName = txtLastName.Text;
-            string FirstName = txtFirstName.Text;
+            if (!ValidarCliente(incluirID: true)) return;
+
+            int personID = Convert.ToInt32(txtPersonID.Text);
+            string lastName = txtLastName.Text.Trim();
+            string firstName = txtFirstName.Text.Trim();
 
             string query = "UPDATE Persons SET LastName = @LastName, FirstName = @FirstName WHERE PersonID = @PersonID";
 
@@ -89,17 +124,18 @@ namespace AplicacionFormRegistros.Forms
                 {
                     connection.Open();
                     SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@PersonID", PersonID);
-                    cmd.Parameters.AddWithValue("@LastName", LastName);
-                    cmd.Parameters.AddWithValue("@FirstName", FirstName);
+                    cmd.Parameters.AddWithValue("@PersonID", personID);
+                    cmd.Parameters.AddWithValue("@LastName", lastName);
+                    cmd.Parameters.AddWithValue("@FirstName", firstName);
 
                     int rows = cmd.ExecuteNonQuery();
                     if (rows > 0)
                         MessageBox.Show("Datos actualizados correctamente.");
                     else
-                        MessageBox.Show("No se encontró el registro para actualizar.");
+                        MessageBox.Show("No se encontró el cliente para actualizar.");
 
                     btnCargar_Click(null, null);
+                    LimpiarCampos();
                 }
                 catch (SqlException ex)
                 {
@@ -110,7 +146,9 @@ namespace AplicacionFormRegistros.Forms
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int PersonID = Convert.ToInt32(txtPersonID.Text);
+            if (!ValidarCliente(incluirID: true)) return;
+
+            int personID = Convert.ToInt32(txtPersonID.Text);
 
             string query = "DELETE FROM Persons WHERE PersonID = @PersonID";
 
@@ -120,21 +158,41 @@ namespace AplicacionFormRegistros.Forms
                 {
                     connection.Open();
                     SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@PersonID", PersonID);
+                    cmd.Parameters.AddWithValue("@PersonID", personID);
 
                     int rows = cmd.ExecuteNonQuery();
                     if (rows > 0)
                         MessageBox.Show("Cliente eliminado correctamente.");
                     else
-                        MessageBox.Show("No se encontró el registro para eliminar.");
+                        MessageBox.Show("No se encontró el cliente para eliminar.");
 
                     btnCargar_Click(null, null);
+                    LimpiarCampos();
                 }
                 catch (SqlException ex)
                 {
                     MessageBox.Show("Error al eliminar datos: " + ex.Message);
                 }
             }
+        }
+
+        private void dgvClientes_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvClientes.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dgvClientes.SelectedRows[0];
+
+                txtPersonID.Text = row.Cells["PersonID"].Value.ToString();
+                txtLastName.Text = row.Cells["LastName"].Value.ToString();
+                txtFirstName.Text = row.Cells["FirstName"].Value.ToString();
+            }
+        }
+
+        private void LimpiarCampos()
+        {
+            txtPersonID.Clear();
+            txtLastName.Clear();
+            txtFirstName.Clear();
         }
     }
 }

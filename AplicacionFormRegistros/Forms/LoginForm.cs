@@ -46,7 +46,7 @@ namespace AplicacionFormRegistros.Forms
                         if (count > 0)
                         {
                             this.Hide();
-                            MainForm main = new MainForm();
+                            MainForm main = new MainForm(usuario);
                             main.Show();
                         }
                         else
@@ -60,6 +60,12 @@ namespace AplicacionFormRegistros.Forms
             {
                 MessageBox.Show("Error en la base de datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            RegisterForm register = new RegisterForm();
+            register.ShowDialog();
         }
     }
 }

@@ -12,9 +12,11 @@ namespace AplicacionFormRegistros.Forms
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private string usuarioLogueado;
+        public MainForm(string usuario)
         {
             InitializeComponent();
+            usuarioLogueado = usuario;
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,6 +34,12 @@ namespace AplicacionFormRegistros.Forms
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SeguridadForm seguridad = new SeguridadForm(usuarioLogueado);
+            seguridad.ShowDialog();
         }
     }
 }
