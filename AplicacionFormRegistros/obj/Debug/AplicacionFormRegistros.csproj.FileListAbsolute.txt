@@ -20,3 +20,4 @@ C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\bin\
 C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\Aplicaci.689BEAB0.Up2Date
 C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.exe
 C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.pdb
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros\obj\Debug\AplicacionFormRegistros.exe.config
