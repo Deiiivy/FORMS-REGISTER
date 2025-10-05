@@ -1,23 +1,18 @@
-﻿using AplicacionFormRegistros.Database;
+﻿using AplicacionFormRegistros.BLL;
+using AplicacionFormRegistros.ENTIDADES;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 
 namespace AplicacionFormRegistros.Forms
 {
     public partial class RegisterForm : Form
     {
+        private readonly UsuarioBLL usuarioBLL;
+
         public RegisterForm()
         {
             InitializeComponent();
+            usuarioBLL = new UsuarioBLL();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -27,49 +22,34 @@ namespace AplicacionFormRegistros.Forms
 
             if (string.IsNullOrEmpty(nuevoUsuario) || string.IsNullOrEmpty(nuevaClave))
             {
-                MessageBox.Show("Ingrese usuario y contraseña");
+                MessageBox.Show("Debe ingresar un usuario y una contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            using (SqlConnection connection = ConexionBD.GetConnection())
+            try
             {
-                try
+                Usuario usuario = new Usuario
                 {
-                    connection.Open();
+                    UsuarioNombre = nuevoUsuario,
+                    Clave = nuevaClave
+                };
 
-                    string checkQuery = "SELECT COUNT(*) FROM Usuarios WHERE Usuario = @Usuario";
-                    SqlCommand checkCmd = new SqlCommand(checkQuery, connection);
-                    checkCmd.Parameters.AddWithValue("@Usuario", nuevoUsuario);
-                    int exists = (int)checkCmd.ExecuteScalar();
+                bool registrado = usuarioBLL.Registrar(usuario);
 
-                    if (exists > 0)
-                    {
-                        MessageBox.Show("Ese usuario ya existe. Elige otro.");
-                        return;
-                    }
-
-                    string insertQuery = "INSERT INTO Usuarios (Usuario, Clave) VALUES (@Usuario, @Clave)";
-                    SqlCommand insertCmd = new SqlCommand(insertQuery, connection);
-                    insertCmd.Parameters.AddWithValue("@Usuario", nuevoUsuario);
-                    insertCmd.Parameters.AddWithValue("@Clave", nuevaClave);
-
-                    int rows = insertCmd.ExecuteNonQuery();
-                    if (rows > 0)
-                    {
-                        MessageBox.Show("Usuario registrado correctamente.");
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se pudo registrar el usuario.");
-                    }
-                }
-                catch (Exception ex)
+                if (registrado)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show("Usuario registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
                 }
+                else
+                {
+                    MessageBox.Show("El usuario ya existe. Elige otro nombre.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
 }
-

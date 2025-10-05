@@ -1,36 +1,21 @@
-﻿using AplicacionFormRegistros.Database;
+﻿using AplicacionFormRegistros.BLL;
+using AplicacionFormRegistros.ENTIDADES;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AplicacionFormRegistros.Forms
 {
     public partial class SeguridadForm : Form
     {
-        public SeguridadForm()
-        {
-            InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        private readonly UsuarioBLL _usuarioBLL;
         private string usuarioActual;
 
         public SeguridadForm(string usuario)
         {
             InitializeComponent();
             usuarioActual = usuario;
-            txtUsuarioActual.Text = usuario; 
+            txtUsuarioActual.Text = usuario;
+            _usuarioBLL = new UsuarioBLL();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -40,40 +25,39 @@ namespace AplicacionFormRegistros.Forms
 
             if (string.IsNullOrEmpty(nuevoUsuario) || string.IsNullOrEmpty(nuevaClave))
             {
-                MessageBox.Show("Ingrese un nuevo usuario y contraseña");
+                MessageBox.Show("Debe ingresar un nuevo usuario y contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            string query = "UPDATE Usuarios SET Usuario = @NuevoUsuario, Clave = @NuevaClave WHERE Usuario = @UsuarioActual";
-
-            using (SqlConnection connection = ConexionBD.GetConnection())
+            try
             {
-                try
+                // Verificar si el usuario ya existe
+                if (_usuarioBLL.ExisteUsuario(nuevoUsuario) && !nuevoUsuario.Equals(usuarioActual, StringComparison.OrdinalIgnoreCase))
                 {
-                    connection.Open();
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@NuevoUsuario", nuevoUsuario);
-                    cmd.Parameters.AddWithValue("@NuevaClave", nuevaClave);
-                    cmd.Parameters.AddWithValue("@UsuarioActual", usuarioActual);
-
-                    int rows = cmd.ExecuteNonQuery();
-                    if (rows > 0)
-                    {
-                        MessageBox.Show("Credenciales actualizadas correctamente.");
-                        usuarioActual = nuevoUsuario;
-                        txtUsuarioActual.Text = nuevoUsuario;
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se encontró el usuario.");
-                    }
+                    MessageBox.Show("El nombre de usuario ya existe. Elija otro.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
-                catch (Exception ex)
+
+                // Intentar actualizar las credenciales
+                bool actualizado = _usuarioBLL.ActualizarCredenciales(usuarioActual, nuevoUsuario, nuevaClave);
+
+                if (actualizado)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show("Credenciales actualizadas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    usuarioActual = nuevoUsuario;
+                    txtUsuarioActual.Text = nuevoUsuario;
+                    txtNuevoUsuario.Clear();
+                    txtNuevaClave.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró el usuario actual.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar usuario: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

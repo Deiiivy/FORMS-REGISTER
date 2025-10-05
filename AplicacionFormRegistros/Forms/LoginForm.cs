@@ -1,16 +1,18 @@
-﻿using System;
-using System.Data.SqlClient;
+﻿using AplicacionFormRegistros.BLL;
+using AplicacionFormRegistros.ENTIDADES;
+using System;
 using System.Windows.Forms;
-using AplicacionFormRegistros.Database;
-
 
 namespace AplicacionFormRegistros.Forms
 {
     public partial class LoginForm : Form
     {
+        private readonly UsuarioBLL usuarioBLL;
+
         public LoginForm()
         {
             InitializeComponent();
+            usuarioBLL = new UsuarioBLL();
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -18,47 +20,26 @@ namespace AplicacionFormRegistros.Forms
             string usuario = textBox1.Text.Trim();
             string password = textBox2.Text.Trim();
 
-            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("Por favor ingresa usuario y contraseña", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             try
             {
-                using (SqlConnection connection = ConexionBD.GetConnection())
+                // Validar credenciales usando la capa BLL
+                bool loginExitoso = usuarioBLL.Login(usuario, password);
+
+                if (loginExitoso)
                 {
-                    connection.Open();
-
-                    string query = @"
-                        SELECT COUNT(*) 
-                        FROM Usuarios 
-                        WHERE LTRIM(RTRIM(LOWER(Usuario))) = LOWER(@Usuario)
-                          AND LTRIM(RTRIM(LOWER(Clave))) = LOWER(@Clave)";
-
-                    using (SqlCommand cmd = new SqlCommand(query, connection))
-                    {
-                        cmd.Parameters.AddWithValue("@Usuario", usuario);
-                        cmd.Parameters.AddWithValue("@Clave", password);
-
-                        int count = (int)cmd.ExecuteScalar();
-
-                        if (count > 0)
-                        {
-                            this.Hide();
-                            MainForm main = new MainForm(usuario);
-                            main.Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
+                    MessageBox.Show("Inicio de sesión exitoso.", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    MainForm main = new MainForm(usuario);
+                    main.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error en la base de datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

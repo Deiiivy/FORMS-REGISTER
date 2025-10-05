@@ -1,0 +1,9 @@
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\obj\Debug\AplicacionFormRegistros.DAL.csproj.AssemblyReference.cache
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\obj\Debug\AplicacionFormRegistros.DAL.csproj.CoreCompileInputs.cache
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\bin\Debug\AplicacionFormRegistros.DALL.dll
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\bin\Debug\AplicacionFormRegistros.DALL.pdb
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\bin\Debug\AplicacionFormRegistros.ENTIDADES.dll
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\bin\Debug\AplicacionFormRegistros.ENTIDADES.pdb
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\obj\Debug\Aplicaci.644F8467.Up2Date
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\obj\Debug\AplicacionFormRegistros.DALL.dll
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.DALL\obj\Debug\AplicacionFormRegistros.DALL.pdb

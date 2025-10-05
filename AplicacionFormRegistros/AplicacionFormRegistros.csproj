@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\ConexionBD.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +129,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AplicacionFormRegistros.BLL\AplicacionFormRegistros.BLL.csproj">
+      <Project>{627409a1-780d-4864-81b5-816499f237ab}</Project>
+      <Name>AplicacionFormRegistros.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AplicacionFormRegistros.ENTIDADES\AplicacionFormRegistros.ENTIDADES.csproj">
+      <Project>{98f43e73-5b59-4e2a-93c8-13ec7dec43b1}</Project>
+      <Name>AplicacionFormRegistros.ENTIDADES</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

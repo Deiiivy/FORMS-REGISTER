@@ -1,0 +1,6 @@
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.ENTIDADES\bin\Debug\AplicacionFormRegistros.ENTIDADES.dll
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.ENTIDADES\bin\Debug\AplicacionFormRegistros.ENTIDADES.pdb
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.ENTIDADES\obj\Debug\AplicacionFormRegistros.ENTIDADES.csproj.AssemblyReference.cache
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.ENTIDADES\obj\Debug\AplicacionFormRegistros.ENTIDADES.csproj.CoreCompileInputs.cache
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.ENTIDADES\obj\Debug\AplicacionFormRegistros.ENTIDADES.dll
+C:\Users\deivy\source\repos\AplicacionFormRegistros\AplicacionFormRegistros.ENTIDADES\obj\Debug\AplicacionFormRegistros.ENTIDADES.pdb
